@@ -51,12 +51,27 @@ mainAnimation = () => {
   var timeline = gsap.timeline();
 
   timeline.from(".container, .logo, .site-header", {
-    duration: 1,
+    duration: 0.5,
     opacity: 0,
     stagger: {
       amount: 0.4,
     },
-    delay: 0.8,
+    delay: 0.5,
+  });
+
+  timeline.from(".info-title", {
+    duration: 0.5,
+    x: -150,
+    opacity: 0,
+    delay: 0.5,
+  });
+
+  timeline.from("#ani", {
+    duration: 0.3,
+    y: 5,
+    opacity: 0,
+    stagger: 0.3,
+    delay: 0.4,
   });
 };
 
