@@ -1,0 +1,27 @@
+#row-about {
+  padding-top: 10px;
+  gap: 10px;
+}
+
+.copy-about {
+  font-size: 12px;
+  font-family: "Manrope", sans-serif;
+  padding-bottom: 25px;
+  ul {
+    font-family: "Manrope", sans-serif;
+  }
+}
+
+.aboutpage-column-1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  flex: 1;
+}
+
+.column.aboutpage-column-2 {
+  flex: 1 !important;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+}

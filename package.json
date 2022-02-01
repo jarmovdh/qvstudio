@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "gsap": "file:gsap-bonus.tgz"
+  }
+}

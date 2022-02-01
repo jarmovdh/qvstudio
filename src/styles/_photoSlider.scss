@@ -1,0 +1,34 @@
+.temp {
+  height: 300px;
+}
+
+.img-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.inner-img-wrapper {
+  width: 150%;
+  border: 1 px solid black;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 1;
+}
+
+.wrapper .box {
+  min-width: 400px;
+  line-height: 200px;
+  text-align: center;
+  background-color: blue;
+  margin-right: 2px;
+}
+
+@media (max-width: 991px) {
+  .inner-img-wrapper {
+    width: 350%;
+  }
+  .temp {
+    height: 0px;
+  }
+}
