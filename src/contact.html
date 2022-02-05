@@ -4,38 +4,170 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Page</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="./styles/main.css" />
-    <!-- barbajs and gsap  -->
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
   </head>
-  <body data-barba="wrapper">
+  <body data-barba="wrapper" class="scroller">
     <!-- loading screen  -->
     <div class="loader">
       <div class="page-transition"></div>
     </div>
     <!-- code from here  -->
-    <main data-barba="container" data-barba-namespace="contact-section">
+    <main data-barba="container" data-barba-namespace="home-section">
       <header class="site-header">
         <div class="main-menu">
-          <div class="logo">Q\V</div>
+          <a href="index.html"><div class="logo">Q\V</div></a>
+
           <div class="nav-menu">
             <ul class="nav-menu">
               <li><a href="about.html">About</a></li>
               <li><a href="photography.html">Photography</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
       </header>
 
       <div class="container">
-        <h1>Contact Page</h1>
+        <div class="info-title work">
+          <h1>Contact</h1>
+          <h1>&#8594;</h1>
+        </div>
+
+        <div class="row" id="row-about">
+          <div class="contact-column-big">
+            <hr />
+            <div class="copy-contact">
+              Studio Strip is a new multi-use space located in the hub of
+              Amsterdam Noord, close to Central Station, public transport and
+              popular cafe’s such as Garage Noord and Skatecafe. Studio Strip
+              offers a photo studio to suit your photography needs with the
+              conveniences of parking spots in front of the door. The creative
+              space is available for a wide array of collaborations and offers a
+              unique industrial workspace character with indoor lighting and
+              access to studio equipment to suit your work. The studio is ideal
+              for all sorts of shoots or other activities such as an art space,
+              exhibition space, conference room and live stream events.
+            </div>
+          </div>
+          <div class="contact-column-big-right">
+            <hr />
+            <div class="contact-column">
+              <div class="copy-about">
+                Studio Strip is a new multi-use space located in the hub of
+                Amsterdam Noord, close to Central Station, public transport and
+                popular cafe’s such as Garage Noord and Skatecafe. Studio Strip
+                offers a photo studio to suit your photography needs with the
+                conveniences of parking spots in front of the door. The creative
+                space is available for a wide array of collaborations and offers
+                a unique industrial workspace character with indoor lighting and
+                access to studio equipment to suit your work. The studio is
+                ideal for all sorts of shoots or other activities such as an art
+                space, exhibition space, conference room and live stream events.
+              </div>
+              <div class="row contact-list" id="contact-list">
+                <div class="column contact-element">
+                  <div>001</div>
+                </div>
+                <div class="column contact-media">
+                  <div><h4>Email</h4></div>
+                </div>
+                <div class="column contact-sign">
+                  <div class="sign">&#8599;</div>
+                </div>
+                <div class="column contact-link">
+                  <div>hi@studioqv.com</div>
+                </div>
+              </div>
+              <div class="row contact-list" id="contact-list">
+                <div class="column contact-element">
+                  <div>002</div>
+                </div>
+                <div class="column contact-media">
+                  <div><h4>Instagram</h4></div>
+                </div>
+                <div class="column contact-sign">
+                  <div class="sign">&#8599;</div>
+                </div>
+                <div class="column contact-link">
+                  <div>@studioqv</div>
+                </div>
+              </div>
+              <div class="row contact-list" id="contact-list">
+                <div class="column contact-element">
+                  <div>003</div>
+                </div>
+                <div class="column contact-media">
+                  <div><h4>Linkedin</h4></div>
+                </div>
+                <div class="column contact-sign">
+                  <div class="sign">&#8599;</div>
+                </div>
+                <div class="column contact-link">
+                  <div>@studioqv</div>
+                </div>
+              </div>
+              <div class="row contact-list" id="contact-list">
+                <div class="column contact-element">
+                  <div>004</div>
+                </div>
+                <div class="column contact-media">
+                  <div><h4>Spotify</h4></div>
+                </div>
+                <div class="column contact-sign">
+                  <div class="sign">&#8599;</div>
+                </div>
+                <div class="column contact-link">
+                  <div>@pqqv</div>
+                </div>
+              </div>
+              <div class="row contact-list" id="contact-list">
+                <div class="column contact-element">
+                  <div>005</div>
+                </div>
+                <div class="column contact-media">
+                  <div><h4>GitHub</h4></div>
+                </div>
+                <div class="column contact-sign">
+                  <div class="sign">&#8599;</div>
+                </div>
+                <div class="column contact-link">
+                  <div>@qwertmedia</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row contact">
+          <div class="link-top">
+            <p>Top &#8634;</p>
+          </div>
+        </div>
       </div>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script defer src="index.js"></script>
   </body>
 </html>

@@ -53,23 +53,30 @@
   justify-content: space-between;
 }
 
+.photo-info {
+  margin-bottom: 3px;
+  background-color: transparent;
+  border: 1px solid black;
+  display: inline-block;
+  cursor: pointer;
+
+  padding: 10px 10px;
+  text-decoration: none;
+}
 .sub-title {
   background: #f1efed;
   font-size: 10px;
   text-transform: uppercase;
   max-width: fit-content;
-  border-bottom: 1px dotted #a9a9a9;
 }
 
 .sub-info {
-  font-size: 11px;
+  font-size: 14px;
   text-align: justify;
   padding-bottom: 5px;
-  border-bottom: 1px dotted #a9a9a9;
 }
 
 .button-1 {
-  background-color: #c2c2c2;
   border: 1px solid #000000;
   border-radius: 28px;
   display: inline-block;
@@ -160,6 +167,5 @@
     font-size: 11px;
     text-align: justify;
     padding-bottom: 5px;
-    border-bottom: 1px dotted #a9a9a9;
   }
 }

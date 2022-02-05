@@ -1,5 +1,3 @@
-// Stop preventing the scroll
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -68,7 +66,8 @@ mainAnimation = () => {
 
   timeline.from("#ani", {
     duration: 0.3,
-    y: 5,
+    y: 15,
+    ease: Power0.easeIn,
     opacity: 0,
     stagger: 0.3,
     delay: 0.4,

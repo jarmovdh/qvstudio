@@ -11,6 +11,8 @@
 // Pages
 @import "./aboutPage";
 @import "./photoPage";
+@import "./contactPage";
+
 
 $mainBackground: #f1efed;
 
@@ -107,7 +109,7 @@ p {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   text-transform: uppercase;
 }
