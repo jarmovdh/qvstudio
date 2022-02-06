@@ -61,13 +61,13 @@ mainAnimation = () => {
     delay: 0.5,
   });
 
-  timeline.from("#ani", {
+  timeline.from("#ani, #row-about", {
     duration: 0.3,
     y: 15,
     ease: Power0.easeIn,
     opacity: 0,
     stagger: 0.3,
-    delay: 0.4,
+    delay: 0.2,
   });
 };
 
