@@ -24,6 +24,16 @@
   margin-right: 2px;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+  cursor: grabbing;
+}
+
+.swiper-button-next.swiper-button-prev {
+  color: darkgrey;
+}
+
 @media (max-width: 991px) {
   .inner-img-wrapper {
     width: 350%;

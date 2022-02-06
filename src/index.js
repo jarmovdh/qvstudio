@@ -1,6 +1,3 @@
-var slideIndex = 1;
-showSlides(slideIndex);
-
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -87,12 +84,14 @@ function init() {
   // scroll to the top of the page
   barba.hooks.enter(() => {
     window.scrollTo(0, 0);
+    showSlides();
   });
 }
 
 barba.hooks.enter(() => {
   console.log("enter");
   window.scrollTo(0, 0);
+  showSlides();
 });
 
 barba.init({
@@ -143,4 +142,6 @@ ScrollTrigger.matchMedia({
   },
 });
 
-// comment/
+// swiper/
+var slideIndex = 1;
+showSlides(slideIndex);
