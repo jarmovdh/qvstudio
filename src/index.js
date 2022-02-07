@@ -46,7 +46,7 @@ mainAnimation = () => {
   var timeline = gsap.timeline();
 
   timeline.from(".container, .logo, .site-header", {
-    duration: 0.5,
+    duration: 0.3,
     opacity: 0,
     stagger: {
       amount: 0.4,
@@ -58,7 +58,7 @@ mainAnimation = () => {
     duration: 0.5,
     x: -150,
     opacity: 0,
-    delay: 0.5,
+    delay: 0.3,
   });
 
   timeline.from("#ani, #row-about", {
@@ -67,16 +67,6 @@ mainAnimation = () => {
     ease: Power0.easeIn,
     opacity: 0,
     stagger: 0.3,
-    delay: 0.2,
-  });
-};
-
-delay = (n) => {
-  n = n | 1000;
-  return new Promise((done) => {
-    setTimeout(() => {
-      done();
-    }, n);
   });
 };
 
@@ -91,8 +81,18 @@ function init() {
 barba.hooks.enter(() => {
   console.log("enter");
   window.scrollTo(0, 0);
+
   showSlides();
 });
+
+delay = (n) => {
+  n = n | 1000;
+  return new Promise((done) => {
+    setTimeout(() => {
+      done();
+    }, n);
+  });
+};
 
 barba.init({
   sync: true,
@@ -101,6 +101,7 @@ barba.init({
       async leave(data) {
         const done = this.async();
         pageTransition();
+
         await delay(1000);
         done();
       },
@@ -116,32 +117,6 @@ barba.init({
   ],
 });
 
-ScrollTrigger.matchMedia({
-  "(min-width: 991px)": function () {
-    ScrollTrigger.create({
-      pin: "#image1",
-      pinSpacing: false,
-      start: "topp top",
-      endTrigger: ".photo-end",
-      end: "top bottom",
-      scroller: ".scroller",
-    });
-  },
-});
-
-ScrollTrigger.matchMedia({
-  "(min-width: 991px)": function () {
-    ScrollTrigger.create({
-      pin: ".phototitle",
-      pinSpacing: false,
-      start: "top top",
-      endTrigger: ".photo-end",
-      end: "top bottom",
-      scroller: ".scroller",
-    });
-  },
-});
-
-// swiper/
 var slideIndex = 1;
+
 showSlides(slideIndex);

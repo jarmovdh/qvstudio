@@ -31,7 +31,7 @@
 .photo-title {
   font-family: "Manrope", sans-serif;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   position: absolute;
   top: 10px;
@@ -42,10 +42,19 @@
 .photo-text {
   font-family: "Manrope", sans-serif;
   color: white;
-  font-size: 11px;
+  font-size: 12px;
   position: absolute;
   top: 40px;
   left: 10px;
+}
+
+.photo-text-bottom {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  font-family: "Manrope", sans-serif;
+  color: white;
+  font-size: 16px;
 }
 
 .photoholder {
@@ -73,14 +82,14 @@
 
 .photoholder img {
   max-width: 100%;
-  transition: all 0.8s;
+  transition: all 0.5s;
   width: 100%;
   height: auto;
   transform: scale(1);
 }
 
 .photoholder:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .copy-photo {

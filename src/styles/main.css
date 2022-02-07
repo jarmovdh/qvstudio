@@ -127,7 +127,7 @@
 .dot {
   height: 10px;
   width: 2px;
-  margin: 0 1px;
+  margin-right: 0 1px;
   background-color: #bbb;
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
@@ -761,6 +761,10 @@ html.is-animating .transition-fade {
   opacity: 0;
 }
 
+#ani {
+  gap: 10px;
+}
+
 #row-about {
   padding-top: 10px;
   gap: 10px;
@@ -861,7 +865,7 @@ html.is-animating .transition-fade {
 .photo-title {
   font-family: "Manrope", sans-serif;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   position: absolute;
   top: 10px;
@@ -872,10 +876,19 @@ html.is-animating .transition-fade {
 .photo-text {
   font-family: "Manrope", sans-serif;
   color: white;
-  font-size: 11px;
+  font-size: 12px;
   position: absolute;
   top: 40px;
   left: 10px;
+}
+
+.photo-text-bottom {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  font-family: "Manrope", sans-serif;
+  color: white;
+  font-size: 16px;
 }
 
 .photoholder {
@@ -904,8 +917,8 @@ html.is-animating .transition-fade {
 
 .photoholder img {
   max-width: 100%;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   width: 100%;
   height: auto;
   -webkit-transform: scale(1);
@@ -913,8 +926,8 @@ html.is-animating .transition-fade {
 }
 
 .photoholder:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .copy-photo {
@@ -999,13 +1012,14 @@ h1 {
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   font-family: "Manrope", sans-serif;
   text-decoration: underline;
 }
 
 .row {
+  gap: 15px;
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
