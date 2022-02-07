@@ -66,7 +66,7 @@ mainAnimation = () => {
     y: 15,
     ease: Power0.easeIn,
     opacity: 0,
-    stagger: 0.3,
+    stagger: 0.1,
   });
 };
 
