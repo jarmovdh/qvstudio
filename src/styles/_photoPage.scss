@@ -1,18 +1,25 @@
 .myButton {
-  background-color: transparent;
+  visibility: hidden !important;
+  z-index: 1;
+  width: fit-content;
+  position: sticky;
+  bottom: 20px;
+  left: 10px;
+  background-color: #f1efed;
   border-radius: 28px;
   border: 1px solid #000000;
+  display: inline-block;
   cursor: pointer;
+  color: #000000;
   font-size: 17px;
-  padding: 11px 25px;
+  padding: 10px 18px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #000000;
 }
 .myButton:hover {
-  background-color: transparent;
+  background-color: #e0e0e0;
 }
 .myButton:active {
-  position: relative;
+  position: sticky;
   top: 1px;
 }
 
@@ -101,5 +108,31 @@
   .copy-photo {
     font-size: 12px;
     font-family: "Manrope", sans-serif;
+  }
+
+  .myButton {
+    visibility: visible !important;
+
+    z-index: 1;
+    width: fit-content;
+    position: sticky;
+    bottom: 10px;
+    left: 10px;
+    background-color: #f1efed;
+    border-radius: 28px;
+    border: 1px solid #000000;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-size: 12px;
+    padding: 5px 9px;
+    text-decoration: none;
+  }
+  .myButton:hover {
+    background-color: #e0e0e0;
+  }
+  .myButton:active {
+    position: sticky;
+    top: 1px;
   }
 }
