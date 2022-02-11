@@ -190,8 +190,8 @@
 .main-menu {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 4fr 1fr;
-      grid-template-columns: 1fr 4fr 1fr;
+  -ms-grid-columns: 1fr 7fr 1fr;
+      grid-template-columns: 1fr 7fr 1fr;
   background: none;
 }
 
@@ -270,7 +270,7 @@
     margin-top: 5vh;
   }
   .nav-menu {
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 500;
   }
   .sub-info-about {
