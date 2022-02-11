@@ -127,3 +127,17 @@ barba.init({
 var slideIndex = 1;
 
 showSlides(slideIndex);
+
+ScrollTrigger.matchMedia({
+  // small
+  "(max-width: 599px)": function () {
+    gsap.from(".copy-about", {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".container",
+        start: "top top",
+      },
+      markers: true,
+    });
+  },
+});
