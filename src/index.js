@@ -51,7 +51,15 @@ mainAnimation = () => {
     stagger: {
       amount: 0.4,
     },
-    delay: 0.5,
+    delay: 0.9,
+  });
+
+  timeline.from(".hero-font", {
+    duration: 0.9,
+    y: 15,
+    ease: Power0.easeIn,
+    opacity: 0,
+    stagger: 0.1,
   });
 
   timeline.from(".info-title", {

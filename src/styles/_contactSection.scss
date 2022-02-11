@@ -44,7 +44,6 @@
 }
 
 .contact-list {
-  align-items: center;
   justify-content: space-between;
   font-size: 12px;
   flex-direction: row;
@@ -80,7 +79,8 @@
   }
 
   #contact-list {
-    align-items: center;
+    display: flex;
+    align-content: stretch;
     flex-direction: row;
     border-bottom: 1px dotted #a9a9a9;
   }
