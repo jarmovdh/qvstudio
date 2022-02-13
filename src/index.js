@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -136,8 +138,8 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: ".container",
         start: "top top",
+        markers: true,
       },
-      markers: true,
     });
   },
 });
