@@ -251,6 +251,20 @@
       align-self: flex-end;
 }
 
+.copy-sub {
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: inherit;
+  padding: 20px 0px;
+}
+
+.line-sub {
+  height: 5px;
+  border-width: 0;
+  background-color: black;
+}
+
 /* Responsive  */
 @media (max-width: 991px) {
   .logo {
@@ -339,6 +353,13 @@
   .top-link {
     padding-top: 10vh;
     margin-bottom: 10px;
+  }
+  .copy-sub {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: inherit;
+    padding: 20px 0px;
   }
 }
 
